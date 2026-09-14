@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: robot2.html (VERSIÓN CORREGIDA)
+    PROPÓSITO: Página HTML para controlar el Robot 2 (auto-eliminación del robot)
+    Esta es la versión corregida con los errores solucionados
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo correcto con las funciones del robot 2
+            src="funcionesRobot2.js" ← CORRECCIÓN APLICADA
+            Antes era "funcionesRobot2" (sin extensión .js), ahora es "funcionesRobot2.js" (correcto)
+
+            EXPLICACIÓN DE LA CORRECCIÓN:
+            - El archivo se llama "funcionesRobot2.js" (con extensión .js)
+            - Ahora la ruta incluye la extensión correcta
+            - El navegador puede encontrar y cargar el archivo correctamente
+        -->
+        <script src="funcionesRobot2.js"></script>
+    </head>
+    <body>
+        <!--
+            Botón que ejecuta la función autoeliminar() correctamente
+            onclick="autoeliminar();" hace lo siguiente:
+            1. Ejecuta la función autoeliminar() (importada de funcionesRobot2.js)
+            2. Muestra una alerta de auto-eliminación del robot
+
+            Este botón representa la auto-destrucción del robot
+        -->
+        <input type="button" value="ELIMINAR" onclick="autoeliminar();"/>
+    </body>
+</html>

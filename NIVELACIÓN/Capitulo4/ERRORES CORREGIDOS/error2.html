@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+    ARCHIVO: error2.html
+    PROPÓSITO: Página para cambiar emojis entre estados TRISTE y CANSADO
+    Las funciones imgEmoji() e imgEmoji2() cambian imagen y texto
+-->
+<html>
+    <head>
+        <script src="error2.js"></script>
+    </head>
+    <body>
+        <h1>ERROR 2</h1>
+        <img id="imgEmoji" src="triste.jpg"/>
+        <h2 id="txtEmoji">TRISTE</h2>
+        <!-- Botón FELIZ ejecuta imgEmoji() que cambia a TRISTE -->
+        <input type="button" value="FELIZ" onclick="imgEmoji();"/>
+        <!-- Botón CANSADO ejecuta imgEmoji2() que cambia a CANSADO -->
+        <input type="button" value="CANSADO" onclick="imgEmoji2();"/>
+    </body>
+</html>

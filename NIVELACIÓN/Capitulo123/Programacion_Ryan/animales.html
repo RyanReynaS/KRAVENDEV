@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: animales.html
+    PROPÓSITO: Página HTML que muestra imágenes de animales con botones interactivos
+    Demuestra cómo usar el atributo onclick para ejecutar código JavaScript directamente en botones
+    ====================================
+-->
+<html>
+    <head>
+        <!-- Título de la página que aparece en la pestaña del navegador -->
+        <title>BESTIAS</title>
+    </head>
+    <body>
+        <!-- Encabezado principal de la página -->
+        <h1>ANIMALES</h1>
+
+        <!--
+            Primera sección: Panda
+            Muestra una imagen de un panda de 300px de ancho y 200px de alto
+            Si cambias los números 300 y 200, la imagen será más grande o más pequeña
+            Por ejemplo: width="500" haría la imagen 500 píxeles más ancha
+        -->
+        <img src="panda.png" width="300" height="200"/>
+
+        <!--
+            Párrafo con botón interactivo para el panda
+            El atributo onclick contiene el código JavaScript que se ejecuta cuando alguien hace clic
+            En este caso, muestra una alerta emergente con un mensaje sobre los pandas
+        -->
+        <p> <input type="button" value="Presioname" onclick="alert('Los pandas son adorables');"/></p>
+
+        <!--
+            Segunda sección: Tigre
+            Similar a la sección del panda
+            Muestra una imagen de un tigre con las mismas dimensiones
+        -->
+        <img src="tigre.png" width="300" height="200"/>
+
+        <!--
+            Párrafo con botón interactivo para el tigre
+            Cuando se hace clic, muestra una alerta diferente sobre los tigres
+            Nota: El texto en la alerta puede cambiar editando el texto entre las comillas
+        -->
+        <p> <input type="button" value="Presioname" onclick="alert('Los tigres son majestuosos');"/></p>
+    </body>

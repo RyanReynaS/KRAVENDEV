@@ -1,0 +1,99 @@
+/**
+ * ARCHIVO: estilos.css
+ * PROPÓSITO: Estilos para la página de comparación de plataformas de streaming
+ */
+
+/**
+ * Fondo de la página:
+ * - Imagen de fondo: fondoEspacio.jpg
+ * - Color de fallo: rgb(130, 78, 179) (púrpura)
+ */
+body{
+    background-image: url(fondoEspacio.jpg) ;  /* Imagen de fondo */
+    background-repeat: no-repeat;              /* No repite la imagen */
+    background-size:cover ;                    /* Cubre todo el elemento */
+    background-color: rgb(130, 78, 179);       /* Color de fallo si imagen no carga */
+}
+
+/**
+ * Clase: .tit - Estilo para el título principal
+ * Texto blanco de 40px, centrado usando flexbox
+ */
+.tit{
+    font-size: 40px;              /* Tamaño grande */
+    color: white;                 /* Texto blanco */
+    font-family: 'Times New Roman', Times, serif;  /* Fuente */
+    margin-bottom: 50px;          /* Espacio abajo */
+    display:flex;                 /* Flexbox para centrado */
+    flex-direction: row;          /* Horizontal */
+    justify-content: center;      /* Centrado */
+}
+
+/**
+ * Clase: .opc - Opciones (no se usa en HTML actual)
+ */
+.opc{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  /* Alineado a la derecha */
+    margin-right: 20px;
+}
+
+/**
+ * Clase: .ace - (no se usa en HTML actual)
+ * Nota: display:flex aparece dos veces (error)
+ */
+.ace{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+/**
+ * Clases para imágenes de plataformas
+ * Todas tienen 200px de ancho y 20px de margen
+ */
+.netflix{
+    width: 200px;
+    margin: 20px;
+}
+
+.prime{
+    width: 200px;
+    margin: 20px;
+}
+
+.disney{
+    width: 200px;
+    margin: 20px;
+}
+
+/**
+ * Clase: .contenedorImagen - Contenedor individual de cada logo
+ * Fondo beige, esquinas redondeadas, flexbox para centrado
+ */
+.contenedorImagen{
+    background-color:beige;      /* Fondo beige */
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;         /* Esquinas redondeadas */
+    display: flex;
+    flex:1;                       /* Toma espacio disponible */
+    justify-content: center;      /* Centra el contenido */
+}
+
+/**
+ * Clase: .contenedorImagenes - Contenedor de todas las imágenes
+ * Usa flexbox para disponer logos horizontalmente
+ */
+.contenedorImagenes{
+    display: flex;
+    flex-direction: row;          /* Horizontal */
+}

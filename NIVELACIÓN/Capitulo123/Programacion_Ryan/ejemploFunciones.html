@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: ejemploFunciones.html
+    PROPÓSITO: Página HTML que demuestra cómo llamar una función JavaScript desde un botón
+    Vincula el archivo funciones.js y utiliza onclick para ejecutar la función saludar()
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo funciones.js
+            Esto permite usar la función saludar() definida en ese archivo
+            El navegador primero carga el archivo funciones.js, luego carga el HTML
+            Sin esta línea, la función saludar() no estaría disponible
+        -->
+        <script src="funciones.js"></script>
+    </head>
+    <body>
+        <!--
+            Botón interactivo que llama la función saludar()
+            onclick="saludar();" significa: cuando alguien hace clic en este botón, ejecuta la función saludar()
+            La función saludar() se define en funciones.js e imprime mensajes en la consola del navegador
+
+            Cómo ver el resultado:
+            1. Abre el navegador (Chrome, Firefox, etc.)
+            2. Abre la consola del navegador (F12 o Ctrl+Shift+J)
+            3. Haz clic en el botón
+            4. En la consola verás los dos mensajes: "Hola, desde la consola" y "Hola, estoy aqui"
+        -->
+        <input type="button" value="Invocar a saludar" onclick="saludar();"/>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: reto2.html
+    PROPÓSITO: Página que muestra dos superhéroes de DC Comics (Superman y Linterna Verde)
+    Contiene imágenes, descripciones y enlaces a sitios web relacionados
+    ====================================
+-->
+<html>
+    <!-- Encabezado principal de la página -->
+    <h1>SUPER HEROES</h1>
+
+    <!--
+        SECCIÓN 1: SUPERMAN
+        Información y botones relacionados con Superman
+    -->
+
+    <!-- Encabezado del nombre del superhéroe -->
+    <h2>SUPERMAN</h2>
+
+    <!-- Descripción de Superman -->
+    <p>SUPERMAN el hombre de acero</p>
+
+    <!--
+        Imagen de Superman
+        Propiedades:
+        - src: ruta de la imagen (superman.png)
+        - alt: texto alternativo si la imagen no carga
+        - width: ancho de 200 píxeles
+        - height: alto de 400 píxeles
+
+        Si cambias width a 300, la imagen será más ancha
+        Si cambias height a 300, la imagen será más cuadrada
+    -->
+    <img src="superman.png" alt="SUPERMAN" width="200" height="400"/>
+
+    <!--
+        Botón para Superman
+        Este botón no tiene onclick definido, así que no hace nada actualmente
+        Podrías agregar: onclick="alert('Superman seleccionado');"
+    -->
+    <input type="button" value="ACEPTAR SUPERMAN"/>
+
+    <!--
+        Enlace a DC Comics
+        href: especifica la URL (https://www.dc.com/)
+        target="_blank": abre en una nueva pestaña sin reemplazar la página actual
+
+        Si cambias target="_blank" a target="_self", abrirá en la misma pestaña
+        Si cambias la URL a otro sitio, irá a ese sitio en su lugar
+    -->
+    <a href="https://www.dc.com/" target="_blank">Ir a DC</a>
+
+    <!--
+        SECCIÓN 2: LINTERNA VERDE
+        Similar a la sección de Superman
+    -->
+
+    <!-- Encabezado del segundo superhéroe -->
+    <h2>LINTERNA VERDE</h2>
+
+    <!-- Descripción de Linterna Verde -->
+    <p>LINTERNA VERDE el protector de Oa</p>
+
+    <!--
+        Imagen de Linterna Verde
+        Mismas propiedades que Superman
+        Si cambias height a 200, la imagen será más pequeña verticalmente
+    -->
+    <img src="linternaverde.png" alt="LINTERNA VERDE" width="200" height="400"/>
+
+    <!--
+        Botón para Linterna Verde
+        Sin onclick definido actualmente
+    -->
+    <input type="button" value="ACEPTAR LINTERNA VERDE"/>
+
+    <!--
+        Enlace a DC Universe Infinite
+        Similar al enlace de Superman, pero va a un sitio diferente
+        target="_blank" abre en una nueva pestaña
+    -->
+    <a href="https://www.dcuniverseinfinite.com/coming-soon/" target="_blank">Ir a DC Universe Infinite</a>
+
+</html>

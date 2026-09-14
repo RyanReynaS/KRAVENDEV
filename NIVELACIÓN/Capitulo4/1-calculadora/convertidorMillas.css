@@ -1,0 +1,189 @@
+/**
+ * ====================================
+ * ARCHIVO: convertidorMillas.css
+ * PROPÓSITO: Estilos visuales para la página del convertidor de millas
+ * Define colores, tamaños, márgenes y disposición de elementos HTML
+ * ====================================
+ */
+
+/**
+ * SELECTOR: body
+ * DESCRIPCIÓN: Estilos para el fondo de toda la página
+ *
+ * PROPIEDADES:
+ * - background-color: rgb(112, 90, 90) → Color de fondo marrón oscuro
+ *   Si cambias los números RGB, cambiarás el color:
+ *   - (255, 0, 0) = rojo
+ *   - (0, 255, 0) = verde
+ *   - (0, 0, 255) = azul
+ *   - (255, 255, 255) = blanco
+ */
+body{
+    background-color: rgb(112, 90, 90);
+}
+
+/**
+ * SELECTOR: .encabezados
+ * DESCRIPCIÓN: Estilos para elementos con class="encabezados"
+ * Aplica estilos a los encabezados de la página (h2, h3 con esta clase)
+ *
+ * PROPIEDADES:
+ * - color: white → Texto blanco
+ * - padding-bottom: 20px → Espacio interior abajo (20 píxeles)
+ *   Si cambias 20px a 10px, habrá menos espacio abajo
+ *   Si cambias a 50px, habrá más espacio
+ * - font-size: 60x → NOTA: "60x" probablemente es un error, debería ser "60px"
+ *   Esto podría no funcionar correctamente
+ *   Si fuera "60px", el texto sería de 60 píxeles de alto
+ *   Si cambias a "40px", el texto será más pequeño
+ */
+.encabezados{
+    color:  white;
+    padding-bottom: 20px;
+    font-size: 60x;
+
+}
+
+/**
+ * SELECTOR: .velocimetro
+ * DESCRIPCIÓN: Estilos para la imagen del velocímetro
+ * Aplica a elementos con class="velocimetro" en el HTML
+ *
+ * PROPIEDADES:
+ * - width: 500px → Ancho de la imagen de 500 píxeles
+ *   Si cambias a 300px, la imagen será más estrecha
+ *   Si cambias a 800px, la imagen será más ancha
+ * - margin: 20px → Espacio exterior alrededor de la imagen (20 píxeles en todos los lados)
+ *   Si cambias a 0px, no habrá espacio alrededor
+ *   Si cambias a 50px, habrá más espacio
+ */
+.velocimetro{
+      width: 500px;
+      margin: 20px;
+
+}
+
+/**
+ * SELECTOR: .contenedorImagen
+ * DESCRIPCIÓN: Estilos para el contenedor de la primera imagen (velocímetro)
+ *
+ * PROPIEDADES DE FLEXBOX:
+ * - display: flex → Convierte el elemento en un contenedor flexible
+ *   Permite organizar los elementos hijo de manera flexible
+ * - flex-direction: row → Los elementos se disponen horizontalmente (izquierda a derecha)
+ *   Si cambias a "column", se dispondrían verticalmente (arriba a abajo)
+ * - justify-content: center → Centra los elementos horizontalmente
+ *   Otras opciones: "flex-start" (izquierda), "flex-end" (derecha)
+ */
+.contenedorImagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/**
+ * SELECTOR: .tablero
+ * DESCRIPCIÓN: Estilos para la imagen del tablero
+ *
+ * PROPIEDADES:
+ * - width: 400px → Ancho de la imagen de 400 píxeles
+ *   La imagen del tablero es más estrecha que el velocímetro (400px vs 500px)
+ *   Si cambias a 300px, será más pequeña
+ * - margin: 20px → Espacio exterior alrededor de la imagen
+ *   Igual al velocimetro para consistencia visual
+ */
+.tablero{
+    width: 400px;
+    margin: 20px;
+}
+
+/**
+ * SELECTOR: .contenedorImagen2
+ * DESCRIPCIÓN: Estilos para el contenedor de la segunda imagen (tablero)
+ * Idéntico a .contenedorImagen (ambos usan flexbox para centrar)
+ */
+.contenedorImagen2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/**
+ * SELECTOR: .contenedorImagenes
+ * DESCRIPCIÓN: Estilos para el contenedor que agrupa ambas imágenes
+ *
+ * PROPIEDADES:
+ * - background-color: beige → Fondo color beige (marrón claro)
+ * - margin-bottom: 5px → Espacio abajo de 5 píxeles
+ * - margin-left: 450px → Espacio izquierda de 450 píxeles (desplaza el contenedor hacia la derecha)
+ *   Si cambias a 0px, el contenedor se moverá a la izquierda
+ *   Si cambias a 100px, habrá menos espacio
+ * - margin-right: 450px → Espacio derecha de 450 píxeles (desplaza el contenedor hacia la izquierda)
+ *   Junto con margin-left, centra el contenedor con márgenes iguales
+ * - border-radius: 10px → Las esquinas redondeadas (radio de 10 píxeles)
+ *   Si cambias a 0px, las esquinas serán rectas
+ *   Si cambias a 20px, las esquinas serán más redondeadas
+ * - display: flex → Contenedor flexible
+ * - flex: 1 → El elemento toma todo el espacio disponible
+ * - justify-content: center → Centra el contenido horizontalmente
+ */
+.contenedorImagenes{
+   background-color:beige;
+    margin-bottom: 5px ;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex:1;
+    justify-content: center;
+
+}
+
+/**
+ * SELECTOR: .tit
+ * DESCRIPCIÓN: Estilos para el título principal de la página
+ *
+ * PROPIEDADES:
+ * - font-size: 40px → Tamaño del texto de 40 píxeles (texto grande)
+ *   Si cambias a 60px, el texto será mucho más grande
+ *   Si cambias a 20px, el texto será pequeño
+ * - color: white → Texto blanco
+ * - font-family: 'Times New Roman', Times, serif → Fuente de letra
+ *   'Times New Roman' es la fuente preferida
+ *   Si no está disponible, usa Times
+ *   Si tampoco está disponible, usa cualquier fuente serif
+ *   Cambiar a 'Arial' daría un aspecto más moderno
+ * - margin-bottom: 50px → Espacio abajo de 50 píxeles
+ *   Si cambias a 0px, no habrá espacio abajo del título
+ *   Si cambias a 100px, habrá mucho más espacio
+ * - display: flex → Contenedor flexible
+ * - flex-direction: row → Los elementos se disponen horizontalmente
+ * - justify-content: center → Centra el contenido (el título quedará en el centro)
+ */
+.tit{
+
+    font-size: 40px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/**
+ * SELECTOR: .text
+ * DESCRIPCIÓN: Estilos para campos de entrada y botones
+ * Aplica a elementos con class="text" (campos input en el HTML)
+ *
+ * PROPIEDADES:
+ * - font-size: xx-large → Tamaño de fuente muy grande (xx-large)
+ *   Hace que el texto del campo de entrada y botón sea muy grande
+ *   Otras opciones: "small", "medium", "large", "x-large"
+ *   Si cambias a "small", el texto será pequeño
+ *   Si cambias a "20px", especificas exactamente el tamaño
+ */
+.text{
+    font-size: xx-large ;
+}

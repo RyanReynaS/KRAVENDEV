@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: robot4.html (VERSIÓN CORREGIDA)
+    PROPÓSITO: Página HTML para controlar el Robot 4 (explosión del robot)
+    Esta es la versión corregida con los errores solucionados
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo funcionesRobot4.js
+            Este archivo contiene la función explotar() que muestra un mensaje de explosión
+        -->
+        <script src="funcionesRobot4.js"></script>
+    </head>
+    <body>
+        <!--
+            Botón que ejecuta la función explotar() correctamente
+            onclick="explotar();" ← CORRECCIÓN APLICADA
+
+            EXPLICACIÓN DE LA CORRECCIÓN:
+            - Antes: onclick="explotar" (SIN paréntesis)
+            - Ahora: onclick="explotar()" (CON paréntesis)
+
+            DIFERENCIA:
+            - onclick="explotar" solo referencia la función, pero NO la ejecuta
+            - onclick="explotar()" ejecuta la función cuando se hace clic
+
+            EFECTO:
+            - Antes: al hacer clic, el botón no hacía nada (no había alerta)
+            - Ahora: al hacer clic, muestra correctamente la alerta de explosión
+
+            LECCIÓN:
+            En JavaScript, los paréntesis () son cruciales:
+            - explotar → hace referencia a la función
+            - explotar() → ejecuta la función
+        -->
+        <input type="button" value="EXPLOTAR" onclick="explotar();"/>
+    </body>
+</html>

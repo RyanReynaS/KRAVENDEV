@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: ejercicioAlert.html
+    PROPÓSITO: Página HTML que demuestra cómo usar la función alert() de JavaScript
+    Cuando el usuario hace clic en el botón, aparece una ventana emergente con un mensaje
+    ====================================
+-->
+<html>
+    <head>
+        <!-- Título que aparece en la pestaña del navegador -->
+        <title>CONSOLA</title>
+    </head>
+    <body>
+        <!-- Encabezado que instruye al usuario a hacer clic -->
+        <h2>PRESIONAME</h2>
+
+        <!--
+            Botón que ejecuta JavaScript cuando se hace clic
+            onclick="alert('Hola desde JavaScript');" hace lo siguiente:
+            - Ejecuta la función alert()
+            - alert() abre una ventana emergente (popup)
+            - Muestra el mensaje 'Hola desde JavaScript' en esa ventana
+
+            Cómo usar alert():
+            - alert("tu mensaje aquí") - mostrará una ventana emergente con tu mensaje
+            - El usuario debe hacer clic en "OK" para cerrar la ventana y continuar
+
+            Si cambias el texto entre las comillas a algo diferente:
+            Por ejemplo: onclick="alert('¡Hiciste clic!');"
+            El mensaje será diferente en la ventana emergente
+        -->
+        <input type="button" value="OK" onclick="alert('Hola desde JavaScript');"/>
+    </body>
+</html>

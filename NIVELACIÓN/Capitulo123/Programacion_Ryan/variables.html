@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: variables.html
+    PROPÓSITO: Interfaz de usuario para controlar una variable de puntaje
+    Vincula el archivo variables.js y proporciona botones para manipular el puntaje de diferentes maneras
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo variables.js
+            Este archivo contiene:
+            - La variable 'puntaje' (inicializada en 0)
+            - Las funciones para modificar el puntaje: cambiar(), mostrar(), incrementarUno(), etc.
+
+            Sin este <script src>, los botones no funcionarían porque no tendrían acceso a esas funciones
+        -->
+        <script src="variables.js"></script>
+    </head>
+
+    <body>
+        <!--
+            Botón 1: "PONER 1000"
+            onclick="cambiar();" ejecuta la función cambiar() del archivo variables.js
+            Esta función establece el puntaje a exactamente 1000
+            Independientemente del valor anterior, después de hacer clic, puntaje = 1000
+        -->
+        <input type="button" value="PONER 1000" onclick="cambiar();"/>
+
+        <!--
+            Botón 2: "Mostrar"
+            onclick="mostrar();" ejecuta la función mostrar()
+            Esta función muestra una ventana emergente (alert) con el valor actual del puntaje
+            Por ejemplo: "El puntaje es: 100"
+        -->
+        <input type="button" value="Mostrar" onclick="mostrar();"/>
+
+        <!--
+            Botón 3: "+"
+            onclick="incrementarUno();" ejecuta la función incrementarUno()
+            Esta función suma 1 al puntaje actual
+            Si puntaje era 50, ahora será 51
+            Puedes hacer clic múltiples veces para sumar más 1s
+        -->
+        <input type="button" value="+" onclick="incrementarUno();"/>
+
+        <!--
+            Botón 4: "-"
+            onclick="disminuirUno();" ejecuta la función disminuirUno()
+            Esta función resta 1 al puntaje actual
+            Si puntaje era 50, ahora será 49
+            Puedes hacer clic múltiples veces para restar más 1s
+        -->
+        <input type="button" value="-" onclick="disminuirUno();"/>
+
+        <!--
+            Botón 5: "+10"
+            onclick="sumarDiez();" ejecuta la función sumarDiez()
+            Esta función suma 10 al puntaje actual
+            Si puntaje era 50, ahora será 60
+            Es más rápido que hacer clic + diez veces
+        -->
+        <input type="button" value="+10" onclick="sumarDiez();"/>
+
+        <!--
+            Botón 6: "-10"
+            onclick="RestarDiez();" ejecuta la función RestarDiez()
+            Esta función resta 10 al puntaje actual
+            Si puntaje era 50, ahora será 40
+
+            NOTA: Observa que esta función se llama "RestarDiez" (con mayúscula R)
+            mientras que la anterior es "sumarDiez" (con minúscula s)
+            Esto es una inconsistencia en el código, pero JavaScript las diferencia por mayúsculas
+        -->
+        <input type="button" value="-10" onclick="RestarDiez();"/>
+    </body>
+</html>

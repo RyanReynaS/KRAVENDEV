@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+    ARCHIVO: likes.html
+    PROPÓSITO: Página de votación para elegir entre Minecraft y Roblox
+    Los usuarios pueden dar like (+1), corazón (+5), o dislike (-1)
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="likes.css" />
+    <script src="likes.js"></script>
+</head>
+
+<body>
+    <!-- Título de la página -->
+    <div class="titulo">¿CUAL ES EL MEJOR?</div>
+
+    <!-- Contenedor para ambos juegos -->
+    <div class="contenedorJuegos">
+
+        <!-- SECCIÓN MINECRAFT -->
+        <div class="contenedor">
+            <!-- Logo de Minecraft -->
+            <img src="minecraft.jpg" class="imagenJuego" />
+            <!-- Botones de votación -->
+            <div class="botones">
+                <!-- Like: suma +1 -->
+                <img src="like.jpg" class="imagenBoton" onclick="sumarLikeMinecraft();"/>
+                <!-- Corazón: suma +5 -->
+                <img src="heart.jpg" class="imagenBoton" onclick="sumarCorazonMinecraft();"/>
+                <!-- Dislike: resta -1 (mínimo 0) -->
+                <img src="dislike.jpg" class="imagenBoton" onclick="restarLikeMinecraft();"/>
+            </div>
+            <!-- Contador de votos para Minecraft -->
+            <p class="votos" id="lblMinecraft">0</p>
+        </div>
+
+        <!-- SECCIÓN ROBLOX -->
+        <div class="contenedor">
+            <!-- Logo de Roblox -->
+            <img src="roblox.jpg" class="imagenJuego" />
+            <!-- Botones de votación -->
+            <div class="botones">
+                <!-- Like: suma +1 -->
+                <img src="like.jpg" class="imagenBoton" onclick="sumarLikeRoblox();"/>
+                <!-- Corazón: suma +5 -->
+                <img src="heart.jpg" class="imagenBoton" onclick="sumarCorazonRoblox();"/>
+                <!-- Dislike: resta -1 (mínimo 0) -->
+                <img src="dislike.jpg" class="imagenBoton" onclick="restarLikeRoblox();"/>
+            </div>
+            <!-- Contador de votos para Roblox -->
+            <p class="votos" id="lblRoblox">0</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

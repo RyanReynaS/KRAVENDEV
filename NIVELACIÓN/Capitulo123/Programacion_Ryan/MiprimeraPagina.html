@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: MiprimeraPagina.html
+    PROPÓSITO: Primera página HTML básica que demuestra la estructura fundamental de una página web
+    Contiene encabezados, párrafos, imágenes y botones
+    ====================================
+-->
+<html>
+    <head>
+        <!-- La sección de cabecera contiene metadatos (aquí está vacía) -->
+    </head>
+    <body>
+        <!-- Encabezado principal de nivel 1 (el más importante) -->
+        <h1>Hola mundo</h1>
+
+        <!-- Encabezado de nivel 2 (menos importante que h1) -->
+        <!-- Los encabezados h1-h6 definen la jerarquía de importancia en la página -->
+        <h2>Bienvenido a mi página web</h2>
+
+        <!--
+            Primer párrafo de texto
+            La etiqueta <p> define un párrafo
+            Nota: El texto está en mayúsculas, pero eso es solo por elección de estilo
+        -->
+        <p>ESTE ES UN TEXTO DE PRUEBA </p>
+
+        <!--
+            Segundo párrafo de texto
+            Nota: La etiqueta de cierre es </P> (mayúscula), aunque normalmente se escribe </p> (minúscula)
+            Ambas funcionan en HTML, pero es mejor mantener consistencia usando minúsculas
+        -->
+        <P>PARA POBRAR EL TAG PARRAFO (P)</P>
+
+        <!--
+            Imagen de un león
+            Propiedades:
+            - src: ruta del archivo (Leon.png)
+            - alt: texto alternativo descriptivo (se muestra si la imagen no carga)
+            - width: ancho de 200 píxeles
+            - height: alto de 400 píxeles
+
+            Nota: Hay un espacio faltante entre alt="Leon" y width
+            Debería ser: alt="Leon" width="200" (con espacio)
+
+            Si cambias width="200" a width="300", la imagen será más ancha
+            Si cambias height="400" a height="200", la imagen será más corta
+        -->
+        <img src="Leon.png" alt="Leon"width="200" height="400">  </img>
+
+        <!--
+            Botón sin funcionalidad
+            Este botón muestra el texto "ACEPTAR" pero no hace nada cuando se hace clic
+            Para hacerlo funcional, necesitarías agregar:
+            onclick="alert('Botón presionado');"
+            o
+            onclick="console.log('Botón presionado');"
+        -->
+        <input type="button" value="ACEPTAR"> </input>
+    </body>
+</html>

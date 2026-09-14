@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: robot3.html
+    PROPÓSITO: Página HTML para controlar el Robot 3 (con dos botones: explotar y eliminar)
+    Importa funcionesRobot3.js que contiene funciones anidadas
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo funcionesRobot3.js
+            Este archivo contiene:
+            - La función autoeliminar() (definida al nivel superior)
+            - Dentro de autoeliminar(), se define la función explotar()
+
+            Por lo tanto:
+            - autoeliminar() está disponible desde el inicio
+            - explotar() solo está disponible DESPUÉS de que autoeliminar() haya sido ejecutada
+        -->
+        <script src="funcionesRobot3.js"></script>
+    </head>
+    <body>
+        <!--
+            Botón 1: "EXPLOTAR"
+            onclick="explotar();" ejecuta la función explotar()
+
+            PERO hay un problema:
+            - explotar() no está definida al cargar la página (solo se define DENTRO de autoeliminar())
+            - Si haces clic en EXPLOTAR antes de hacer clic en ELIMINAR, obtendrás un error
+            - Si haces clic en ELIMINAR primero, luego EXPLOTAR funciona correctamente
+
+            ORDEN CORRECTO DE CLICS:
+            1. Primero: Haz clic en ELIMINAR (esto define la función explotar())
+            2. Luego: Haz clic en EXPLOTAR (ahora funciona porque explotar() está definida)
+        -->
+        <input type="button" value="EXPLOTAR" onclick="explotar();"/>
+
+        <!--
+            Botón 2: "ELIMINAR"
+            onclick="autoeliminar();" ejecuta la función autoeliminar()
+
+            Esta función:
+            1. Muestra un mensaje: "El robot ha sido eliminado"
+            2. Define la función explotar() para futuras llamadas
+
+            Este botón debe presionarse PRIMERO para que explotar() esté disponible
+        -->
+        <input type="button" value="ELIMINAR" onclick="autoeliminar();"/>
+    </body>
+</html>

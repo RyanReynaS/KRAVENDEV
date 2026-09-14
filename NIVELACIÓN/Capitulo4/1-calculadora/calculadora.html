@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: calculadora.html
+    PROPÓSITO: Interfaz de usuario para una calculadora básica
+    Permite al usuario ingresar dos números y realizar operaciones matemáticas (suma, resta, multiplicación, división)
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo calculadora.js que contiene las funciones:
+            - sumar(), restar(), multiplicar(), dividir(), limpiar()
+            Estas funciones se ejecutan cuando el usuario hace clic en los botones
+        -->
+        <script src="calculadora.js"></script>
+    </head>
+    <body>
+        <!-- Etiqueta que pide al usuario que ingrese el primer valor -->
+        <h3>Ingrese el primer valor</h3>
+
+        <!--
+            Campo de entrada de texto para el primer número
+            id="txtValor1" ← Identificador único para acceder a este elemento desde JavaScript
+            Las funciones en calculadora.js buscan este id para obtener el valor que escribió el usuario
+        -->
+        <input type="text" id="txtValor1"/>
+
+        <!-- Etiqueta que pide al usuario que ingrese el segundo valor -->
+        <h3>Ingrese el segundo valor</h3>
+
+        <!--
+            Campo de entrada de texto para el segundo número
+            id="txtValor2" ← Identificador único para acceder a este elemento desde JavaScript
+        -->
+        <input type="text" id="txtValor2"/>
+
+        <!--
+            Elemento donde se mostrará el resultado de la operación
+            id="lblResultado" ← Identificador único
+            Las funciones de calculadora.js modifican el texto de este elemento para mostrar el resultado
+            Por ejemplo, después de sumar 5+3, este elemento mostrará "Resultado: 8"
+        -->
+        <h3 id="lblResultado">
+            Resultado:
+        </h3>
+
+        <!--
+            Botón SUMAR
+            onclick="sumar();" ejecuta la función sumar() cuando se hace clic
+            La función lee los dos valores de txtValor1 y txtValor2, los suma y muestra el resultado
+        -->
+        <input type="button" value="SUMAR" onclick="sumar();"/>
+
+        <!--
+            Botón RESTAR
+            onclick="restar();" ejecuta la función restar()
+            La función resta el segundo valor del primer valor
+        -->
+        <input type="button" value="RESTAR" onclick="restar();"/>
+
+        <!--
+            Botón MULTIPLICAR
+            onclick="multiplicar();" ejecuta la función multiplicar()
+            La función multiplica los dos valores
+        -->
+        <input type="button" value="MULTIPLICAR" onclick="multiplicar();"/>
+
+        <!--
+            Botón DIVIDIR
+            onclick="dividir();" ejecuta la función dividir()
+            La función divide el primer valor entre el segundo valor
+        -->
+        <input type="button" value="DIVIDIR" onclick="dividir();"/>
+
+        <!--
+            Botón LIMPIAR
+            onclick="limpiar()" ejecuta la función limpiar()
+            Nota: Falta el punto y coma (;) pero sigue funcionando
+            La función establece ambos campos de entrada a 0 y borra el resultado
+        -->
+        <input type="button" value="LIMPIAR" onclick="limpiar()">
+
+    </body>
+</html>

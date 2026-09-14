@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio de Notas</title>
+    <!-- Incluir los scripts en orden -->
+    <script src="utilitarios.js"></script>
+    <script src="serviciosPromedioNotas.js"></script>
+    <script src="promedioNotas.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Promedio</h1>
+    
+    <div>
+        <label>Nota 1:</label>
+        <input type="text" id="txtNota1">
+    </div>
+    <br>
+    <div>
+        <label>Nota 2:</label>
+        <input type="text" id="txtNota2">
+    </div>
+    <br>
+    <div>
+        <label>Nota 3:</label>
+        <input type="text" id="txtNota3">
+    </div>
+    <br>
+    
+    <button onclick="calcularPromedioNotas()">Calcular Promedio</button>
+
+    <h3>Resultado: <span id="lblPromedio"></span></h3>
+    <h3>Mensaje: <span id="lblMensaje"></span></h3>
+
+        <!-- Tag para mostrar el gif de éxito o fracaso -->
+    <img id="imgResultado" src="" alt="">
+
+        <!-- Tag para mostrar el gif de éxito o fracaso -->
+        <img id="imgResultado" src="" alt="">
+ </body>
+  </html>

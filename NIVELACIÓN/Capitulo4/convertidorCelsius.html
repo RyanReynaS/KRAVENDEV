@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: convertidorCelsius.html
+    PROPÓSITO: Página web para convertir temperaturas de Celsius a Fahrenheit
+    Interfaz simple con campo de entrada, resultado y botón de conversión
+    ====================================
+-->
+<html>
+    <head>
+        <!-- Importa las funciones de conversión -->
+        <script src="convertidorCelsius.js"></script>
+    </head>
+    <body>
+        <!-- Encabezado que pide ingresar la temperatura -->
+        <h2>Ingrese el valor en Celsius</h2>
+
+        <!--
+            Campo de entrada para la temperatura en Celsius
+            id="txtValor1" → Identificador para acceder desde JavaScript
+            El usuario escribe aquí un número (ej: 37)
+        -->
+        <input type="text" id="txtValor1"/>
+
+        <!--
+            Elemento donde se muestra el resultado
+            id="lblResultado" → Identificador para acceder desde JavaScript
+            Inicialmente muestra "Resultado:"
+            Después de hacer clic en CONVERTIR, mostrará algo como "Resultado: 98.6 FAHRENHEIT"
+        -->
+        <h3 id="lblResultado">
+            Resultado:
+        </h3>
+
+        <!--
+            Botón para ejecutar la conversión
+            onclick="convertir();" ejecuta la función convertir()
+            La función:
+            1. Lee el valor de txtValor1
+            2. Aplica la fórmula (Celsius × 9/5) + 32
+            3. Muestra el resultado en lblResultado
+        -->
+        <input type="button" value="CONVERTIR A GRADOS FAHRENHEIT" onclick="convertir();"/>
+    </body>
+</html>

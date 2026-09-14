@@ -1,0 +1,44 @@
+<!-- ==========================================
+     ARCHIVO: dibujar.html
+     EJEMPLO: Dibujar rectángulos en un canvas
+     ==========================================
+     Este archivo demuestra cómo usar un canvas para dibujar formas.
+     Es un ejemplo simple que no tiene JavaScript complejo, solo
+     dos funciones que dibujan rectángulos.
+     ========================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Vincular el archivo CSS para estilos visuales -->
+  <link rel="stylesheet" href="dibujar.css">
+</head>
+
+<body>
+  <!-- Contenedor principal que centra el contenido -->
+  <div class="contenedor">
+    <!-- ==========================================
+         CANVAS - La pantalla donde se dibuja
+         ========================================== -->
+    <!-- El canvas es un elemento HTML5 que permite dibujar gráficos
+         width="600" = ancho de 600 píxeles
+         height="400" = alto de 400 píxeles
+         Este elemento será controlado por JavaScript -->
+    <canvas id="areadibujo" width="600" height="400"></canvas>
+  </div>
+
+  <!-- ==========================================
+       BOTÓN PARA DIBUJAR
+       ========================================== -->
+  <!-- Cuando el usuario hace clic en este botón, se ejecutan
+       las dos funciones de dibujo (dibujarRectangulo y dibujarRectangulo2) -->
+  <button type="button" onclick="dibujarRectangulo(); dibujarRectangulo2()">DIBUJAR</button>
+
+  <!-- ==========================================
+       CARGAR LA LÓGICA DEL DIBUJO
+       ========================================== -->
+  <!-- Este archivo contiene las funciones dibujarRectangulo() y dibujarRectangulo2()
+       Se carga DESPUÉS del HTML para que pueda acceder al elemento canvas -->
+  <script src="dibujar.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+    ARCHIVO: error1.html
+    PROPÓSITO: Página con botones para cambiar emojis (tiene un error tipográfico en la etiqueta script)
+    NOTA: <scritp> debería ser <script> (error de tipografía)
+-->
+<html>
+    <head>
+        <!-- ERROR: <scritp> debería ser <script> (falta la 'c')
+             Por esto la función cambiarTriste() no se carga correctamente -->
+        <scritp src="error1.js"></scritp>
+    </head>
+    <body>
+        <h1>ERROR 1</h1>
+        <!-- Imagen del emoji que se cambiará -->
+        <img id="imgEmoji" src="feliz.jpg"/>
+        <!-- Texto que describe el estado -->
+        <h2 id="txtEmoji">FELIZ</h2>
+        <!-- Botón FELIZ (sin función) -->
+        <input type="button" value="FELIZ"/>
+        <!-- Botón TRISTE ejecuta cambiarTriste() -->
+        <input type="button" value="TRISTE" onclick="cambiarTriste();"/>
+        <!-- Botón CANSADO (sin función) -->
+        <input type="button" value="CANSADO" />
+    </body>
+</html>

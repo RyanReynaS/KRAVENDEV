@@ -1,0 +1,83 @@
+<!-- ==========================================
+     ARCHIVO: recolector.html
+     JUEGO: Recolector de Gemas
+     ==========================================
+     Este es el archivo HTML principal. Define la estructura de la página:
+     títulos, estadísticas (puntaje, vidas, tiempo), canvas y botones de control.
+     ========================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos de la página -->
+    <meta charset="UTF-8">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Recolector de Gemas</title>
+    <!-- Vincular el archivo CSS para estilos visuales -->
+    <link rel="stylesheet" href="recolector.css">
+</head>
+
+<!-- La etiqueta body carga el juego automáticamente con onload="iniciarJuego()" -->
+<body onload="iniciarJuego()">
+    <!-- Título principal del juego -->
+    <h1>RECOLECTOR GEMAS</h1>
+
+    <!-- Autor del juego -->
+    <p>Ryan Reyna</p>
+
+    <!-- ==========================================
+         PANEL DE INFORMACIÓN
+         ========================================== -->
+    <!-- Muestra el puntaje, vidas y tiempo restante -->
+
+    <!-- Puntaje: el <span id="txtPuntaje"> se actualiza dinámicamente desde JavaScript -->
+    <p>PUNTAJE:<span id="txtPuntaje"> 0 </span></p>
+
+    <!-- Vidas: el <span id="txtVidas"> se actualiza dinámicamente desde JavaScript -->
+    <p>VIDAS:<span id="txtVidas"> 3 </span></p>
+
+    <!-- Tiempo restante: el <span id="txtTiempo"> se actualiza dinámicamente desde JavaScript -->
+    <p>TIEMPO RESTANTE:<span id="txtTiempo"> 60 </span></p>
+
+    <!-- ==========================================
+         CANVAS - La pantalla del juego
+         ========================================== -->
+    <!-- El canvas es donde se dibuja todo (personaje, gemas, trampas)
+         width="500" = ancho de 500 píxeles
+         height="400" = alto de 400 píxeles
+         Este elemento se controla totalmente desde JavaScript -->
+    <canvas id="areaJuego" width="500" height="400"></canvas>
+
+    <br>
+
+    <!-- ==========================================
+         BOTONES DE CONTROL DE DIRECCIÓN
+         ========================================== -->
+    <!-- Los botones permiten mover el personaje en 4 direcciones -->
+
+    <!-- Botón para mover arriba - Llama a moverArriba() -->
+    <button type="button" onclick="moverArriba()">Arriba</button>
+    <br>
+
+    <!-- Fila con botones izquierda y derecha -->
+    <button type="button" onclick="moverIzquierda()">Izquierda</button>
+    <button type="button" onclick="moverDerecha()">Derecha</button>
+    <br>
+
+    <!-- Botón para mover abajo - Llama a moverAbajo() -->
+    <button type="button" onclick="moverAbajo()">Abajo</button>
+    <br>
+
+    <!-- Botón para reiniciar el juego - Llama a reiniciarJuego() -->
+    <button type="button" onclick="reiniciarJuego()">Reiniciar</button>
+
+    <!-- ==========================================
+         CARGAR LA LÓGICA DEL JUEGO
+         ========================================== -->
+    <!-- Este archivo contiene todas las funciones principales del juego
+         (iniciarJuego, moverArriba, detectarColisionGema, etc.)
+         IMPORTANTE: Se carga DESPUÉS del HTML para que pueda acceder a los elementos -->
+    <script src="recolector.js"></script>
+</body>
+
+</html>

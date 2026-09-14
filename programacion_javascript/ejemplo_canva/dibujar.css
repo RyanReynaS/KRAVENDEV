@@ -1,0 +1,43 @@
+/* ==========================================
+   ARCHIVO: dibujar.css
+   ESTILOS VISUALES - Ejemplo Canvas
+   ==========================================
+   Este archivo define los estilos (colores, tamaños, espacios)
+   de la página de ejemplo de canvas.
+   ========================================== */
+
+/* ESTILOS DEL CUERPO DE LA PÁGINA */
+body {
+  /* Tipo de letra a usar en toda la página */
+  font-family: Arial, sans-serif;
+  /* Color de fondo de la página (azul muy oscuro) */
+  background-color: #0f172a;
+  /* Color del texto (blanco para que se vea sobre fondo oscuro) */
+  color: white;
+  /* Centra todo el contenido horizontalmente */
+  text-align: center;
+  /* Elimina el espaciado por defecto del navegador */
+  margin: 0;
+  /* Añade 20px de espacio interno en los lados */
+  padding: 20px;
+}
+
+/* ESTILOS DEL CONTENEDOR PRINCIPAL */
+.contenedor {
+  /* Ancho máximo de 800px (si la pantalla es más grande, no crece más) */
+  max-width: 800px;
+  /* Margen automático de 0 arriba/abajo y automático a los lados (centra horizontalmente) */
+  margin: 0 auto;
+}
+
+/* ESTILOS DEL CANVAS */
+canvas {
+  /* Color de fondo dentro del canvas (gris claro) */
+  background-color: #d9dce1;
+  /* Borde cian/turquesa de 3px alrededor del canvas */
+  border: 3px solid #38bdf8;
+  /* Mostrar como bloque (en su propia línea, no en línea con otros elementos) */
+  display: block;
+  /* Margen: 20px arriba/abajo, automático a los lados (centra horizontalmente) */
+  margin: 20px auto;
+}

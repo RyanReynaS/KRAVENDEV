@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: saludo.html
+    PROPÓSITO: Página para ingresar nombre y recibir un saludo personalizado
+    Demuestra la interacción entre HTML y JavaScript para entrada de usuario
+    ====================================
+-->
+<html>
+<head>
+    <!-- Título de la página -->
+    <title>Mi Página</title>
+    <!-- Importa las funciones del archivo saludo.js -->
+    <script src="saludo.js"></script>
+</head>
+<body>
+    <!-- Encabezado que pide al usuario ingresar su nombre -->
+    <h2>Ingrese su nombre:</h2>
+
+    <!--
+        Campo de entrada de texto para el nombre
+        id="txtNombre" → Identificador para acceder desde JavaScript
+        El usuario escribe su nombre aquí
+    -->
+    <input type="text" id="txtNombre" />
+
+    <!--
+        Botón para ejecutar la función saludar
+        onclick="saludar()" ejecuta la función saludar()
+        Nota: Falta el punto y coma (;) pero sigue funcionando
+        La función leerá el nombre del campo txtNombre y mostrará un saludo
+    -->
+    <input type="button" value="Presioname" onclick="saludar()" />
+</body>
+</html>

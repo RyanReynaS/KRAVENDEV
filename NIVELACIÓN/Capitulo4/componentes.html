@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: componentes.html
+    PROPÓSITO: Página que permite cambiar dinámicamente el texto e imágenes usando JavaScript
+    Demuestra la manipulación del DOM (modificar elementos HTML existentes)
+    ====================================
+-->
+<html>
+    <head>
+        <!-- Importa las funciones modificarTexto() y modificarImagen() -->
+        <script src="componentes.js"></script>
+    </head>
+    <body>
+        <!--
+            Encabezado con id="titulo1"
+            Este es el elemento cuyo texto se cambiará al hacer clic en "Cambiar Texto"
+            Inicialmente muestra "Cambiar componentes"
+            Después de hacer clic, mostrará "cualquier cosa"
+        -->
+        <h1 id="titulo1">Cambiar componentes</h1>
+
+        <!--
+            Imagen con id="imagen1"
+            src="caras.png" → Imagen inicial que se mostrará
+            alt="" → Texto alternativo (está vacío)
+            Este es el elemento cuya imagen se cambiará al hacer clic en "Cambiar Imagen"
+        -->
+        <img id="imagen1" src="caras.png" alt="">
+
+        <!--
+            Botón para cambiar la imagen
+            onclick="modificarImagen();" ejecuta la función modificarImagen()
+            La función cambia el src de la imagen a "perro.png"
+        -->
+        <input type="button" value="Cambiar Imagen" onclick="modificarImagen();"/>
+
+        <!--
+            Botón para cambiar el texto
+            onclick="modificarTexto();" ejecuta la función modificarTexto()
+            La función cambia el texto del h1 a "cualquier cosa"
+        -->
+        <input type="button" value="Cambiar Texto" onclick="modificarTexto();"/>
+
+    </body>
+    

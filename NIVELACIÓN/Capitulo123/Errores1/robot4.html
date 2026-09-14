@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: robot4.html
+    PROPÓSITO: Página HTML para controlar el Robot 4 (explosión del robot)
+    Importa funcionesRobot4.js y proporciona un botón para explotar el robot
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo funcionesRobot4.js
+            Este archivo contiene la función explotar() que muestra un mensaje de explosión
+        -->
+        <script src="funcionesRobot4.js"></script>
+    </head>
+    <body>
+        <!--
+            Botón que ejecuta la función explotar()
+            onclick="explotar" (SIN paréntesis)
+
+            NOTA IMPORTANTE - ERROR EN EL CÓDIGO:
+            - onclick="explotar" solo referencia la función, pero NO la ejecuta
+            - Debería ser: onclick="explotar()" (CON paréntesis)
+
+            EXPLICACIÓN DE LA DIFERENCIA:
+            - onclick="explotar" → obtiene la función pero no la ejecuta (solo la referencia)
+            - onclick="explotar()" → ejecuta la función (llama a la función)
+
+            EFECTO:
+            Si haces clic con onclick="explotar":
+            - El botón no hará nada visible porque la función NO se ejecuta
+            - Para que funcione correctamente, necesitas los paréntesis: onclick="explotar()"
+
+            SOLUCIÓN:
+            Cambiar a: <input type="button" value="EXPLOTAR" onclick="explotar();"/>
+        -->
+        <input type="button" value="EXPLOTAR" onclick="explotar"/>
+    </body>
+</html>

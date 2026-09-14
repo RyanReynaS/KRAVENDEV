@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: reto8.html
+    PROPÓSITO: Página para simular encender y apagar una computadora
+    Permite cambiar la imagen de la computadora entre dos estados (encendida/apagada)
+    ====================================
+-->
+<html>
+    <head>
+        <!-- Importa las funciones de encendido y apagado -->
+        <script src="reto8.js"></script>
+    </head>
+    <body>
+
+        <!--
+            Imagen de la computadora
+            id="compu" → Identificador para acceder desde JavaScript
+            src="compuApagada.PNG" → Imagen inicial (computadora apagada)
+            Esta es la imagen que se cambiará cuando el usuario haga clic en los botones
+        -->
+        <img id="compu" src="compuApagada.PNG">
+
+        <!--
+            Botón para encender la computadora
+            onclick="modificarImagen();" ejecuta la función modificarImagen()
+            La función cambia src de la imagen a "compuPrendida.PNG"
+        -->
+        <input type="button" value="Encender" onclick="modificarImagen();"/>
+
+        <!--
+            Botón para apagar la computadora
+            onclick="modificarImagen2();" ejecuta la función modificarImagen2()
+            La función cambia src de la imagen de vuelta a "compuApagada.PNG"
+        -->
+        <input type="button" value="Apagar" onclick="modificarImagen2();"/>
+
+    </body>
+</html>

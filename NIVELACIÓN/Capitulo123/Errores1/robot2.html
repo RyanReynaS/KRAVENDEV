@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: robot2.html
+    PROPÓSITO: Página HTML para controlar el Robot 2 (auto-eliminación del robot)
+    Importa funcionesRobot2.js y proporciona un botón para eliminar el robot
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo con las funciones del robot 2
+            NOTA: El atributo src es "funcionesRobot2" SIN la extensión ".js"
+            Debería ser "funcionesRobot2.js"
+
+            EXPLICACIÓN DEL ERROR:
+            - src="funcionesRobot2" intenta cargar un archivo sin extensión
+            - El archivo real es "funcionesRobot2.js" (con extensión .js)
+            - Sin la extensión .js, el navegador podría no encontrar el archivo correctamente
+
+            SOLUCIÓN:
+            Cambiar a: <script src="funcionesRobot2.js"></script>
+        -->
+        <script src="funcionesRobot2"></script>
+    </head>
+    <body>
+        <!--
+            Botón que ejecuta la función autoeliminar()
+            onclick="autoeliminar();" hace lo siguiente:
+            1. Busca la función autoeliminar() (definida en funcionesRobot2.js)
+            2. La ejecuta, mostrando una alerta indicando que el robot se ha auto-eliminado
+
+            Este botón representa la auto-destrucción del robot (el robot se elimina a sí mismo)
+            A diferencia de robot1.html que es una explosión externa, este es un evento de auto-destrucción
+        -->
+        <input type="button" value="ELIMINAR" onclick="autoeliminar();"/>
+    </body>
+</html>

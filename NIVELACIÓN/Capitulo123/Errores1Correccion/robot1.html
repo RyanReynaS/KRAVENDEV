@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: robot1.html (VERSIÓN CORREGIDA)
+    PROPÓSITO: Página HTML para controlar el Robot 1 (explosión del robot)
+    Esta es la versión corregida con los errores solucionados
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo correcto con las funciones del robot
+            src="funcionesRobot1.js" ← CORRECCIÓN APLICADA
+            Antes era "funcionesRobot.js" (incorrecto), ahora es "funcionesRobot1.js" (correcto)
+
+            EXPLICACIÓN DE LA CORRECCIÓN:
+            - El archivo real se llama "funcionesRobot1.js"
+            - Ahora la ruta coincide con el nombre real del archivo
+            - El archivo se cargará correctamente
+        -->
+        <script src="funcionesRobot1.js"></script>
+    </head>
+    <body>
+        <!--
+            Botón que ejecuta la función explotar() correctamente
+            onclick="explotar();" hace lo siguiente:
+            1. Ejecuta la función explotar() (importada de funcionesRobot1.js)
+            2. Muestra una alerta de explosión
+
+            El botón muestra el texto "EXPLOTAR" en la interfaz
+        -->
+        <input type="button" value="EXPLOTAR" onclick="explotar();"/>
+    </body>
+</html>

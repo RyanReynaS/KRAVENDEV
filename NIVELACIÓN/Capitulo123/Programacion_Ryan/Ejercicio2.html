@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: Ejercicio2.html
+    PROPÓSITO: Página HTML que muestra dos superhéroes (Batman y Spiderman) con sus imágenes y descripciones
+    Demuestra el uso de encabezados, párrafos, imágenes y enlaces en HTML
+    ====================================
+-->
+<html>
+    <head>
+        <!-- El título de la página aparecerá en la pestaña del navegador (aunque aquí no está definido explícitamente) -->
+    </head>
+    <body>
+        <!-- Encabezado principal de la página que dice "SUPERHEROES" -->
+        <h1>SUPPERHEROES</h1>
+
+        <!--
+            SECCIÓN 1: BATMAN
+            Muestra información sobre Batman
+        -->
+
+        <!-- Encabezado de nivel 2 con el nombre del superhéroe -->
+        <h2>Batman</h2>
+
+        <!-- Párrafo descriptivo sobre Batman -->
+        <p>Batman el caballero de la noche</p>
+
+        <!--
+            Imagen de Batman
+            Propiedades:
+            - src: ruta del archivo de imagen (Batman.png)
+            - alt: texto alternativo si la imagen no carga
+            - width: ancho de la imagen en píxeles (200px)
+            - height: altura de la imagen en píxeles (400px)
+
+            Si cambias width="200" a width="400", la imagen será el doble de ancha
+            Si cambias height="400" a height="200", la imagen será más corta
+        -->
+        <img src="Batman.png" alt="Batman" width="200" height="400">  </img>
+
+        <!--
+            Botón para Batman
+            El atributo value define el texto que aparece en el botón ("ACEPTAR batman")
+            Nota: Este botón no tiene un onclick definido, por lo que no hace nada cuando se hace clic
+            Para hacerlo funcional, necesitarías agregar: onclick="alert('Batman seleccionado');"
+        -->
+        <input type="button" value="ACEPTAR batman"> </input>
+
+        <!--
+            SECCIÓN 2: SPIDERMAN
+            Muestra información sobre Spiderman (similar a la sección de Batman)
+        -->
+
+        <!-- Encabezado de nivel 2 con el nombre del segundo superhéroe -->
+        <h2>Spiderman</h2>
+
+        <!-- Párrafo descriptivo sobre Spiderman -->
+        <p>Spiderman el hombre araña</p>
+
+        <!--
+            Imagen de Spiderman
+            Misma estructura que la imagen de Batman
+            Si cambias height="400" a height="300", la imagen será más pequeña verticalmente
+        -->
+        <img src="spiderman.png" alt="Spiderman" width="200" height="400">  </img>
+
+        <!--
+            Botón para Spiderman
+            Similar al botón de Batman, no tiene un onclick definido
+            Sería más útil si tuviera onclick="alert('Spiderman seleccionado');"
+        -->
+        <input type="button" value="ACEPTAR Spiderman"> </input>
+
+        <!--
+            Enlace a Marvel
+            href: especifica la URL a donde se irá cuando haces clic
+            target="_blank": abre el enlace en una pestaña o ventana nueva (no reemplaza la página actual)
+
+            Si cambias target="_blank" a target="_self", abrirá en la misma pestaña
+            Si cambias la URL a otro sitio, como "https://www.google.com", irá a Google en su lugar
+        -->
+        <a href="https://www.marvel.com/" target="_blank">Ir a Marvel</a>
+    </body>
+</html>

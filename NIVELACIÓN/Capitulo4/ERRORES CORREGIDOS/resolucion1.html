@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    ARCHIVO: resolucion1.html
+    PROPÓSITO: Página corregida con 3 botones para cambiar entre emojis
+    Cada botón ejecuta una función que cambia imagen y texto
+-->
+<html>
+    <head>
+        <title>ERROR1</title>
+        <script src="resolucion1.js"></script>
+    </head>
+    <body>
+        <h1>ERROR 1</h1>
+
+        <!-- Imagen del emoji (inicialmente TRISTE) -->
+        <img id="imgEmoji" src="triste.jpg"/>
+        <!-- Texto del emoji (inicialmente TRISTE) -->
+        <h2 id="txtEmoji">TRISTE</h2>
+
+        <!-- Botón FELIZ ejecuta imgEmoji() -->
+        <input type="button" value="FELIZ" onclick="imgEmoji();"/>
+        <!-- Botón TRISTE ejecuta imgEmoji2() -->
+        <input type="button" value="TRISTE" onclick="imgEmoji2();"/>
+        <!-- Botón CANSADO ejecuta imgEmoji3() -->
+        <input type="button" value="CANSADO" onclick="imgEmoji3();"/>
+
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: convertidorMillas.html
+    PROPÓSITO: Página web para convertir millas a kilómetros
+    Incluye imágenes de vehículos (velocímetro y tablero) y una interfaz para ingresar millas y ver el resultado en km
+    ====================================
+-->
+<html>
+    <head>
+        <!--
+            Importa el archivo convertidorMillas.js que contiene la función convertir()
+            Esta función realiza la conversión de millas a kilómetros
+        -->
+        <script src="convertidorMillas.js"></script>
+
+        <!--
+            Importa el archivo CSS para estilos visuales
+            convertidorMillas.css define las clases CSS usadas en este HTML:
+            - .tit: estilo para el título
+            - .contenedorImagenes, .contenedorImagen, .contenedorImagen2: estilos para organizar las imágenes
+            - .encabezados: estilo para los títulos
+            - .text: estilo para el campo de entrada y botón
+        -->
+        <link rel="stylesheet" href="convertidorMillas.css">
+    </head>
+    <body>
+
+        <!--
+            Contenedor del título principal
+            <div> es un contenedor genérico para agrupar contenido
+        -->
+        <div>
+            <!-- Título de la página con clase "tit" para aplicarle estilos -->
+            <div class="tit">CONVERTIDOR DE MILLAS</div>
+        </div>
+
+        <!--
+            Contenedor para las imágenes decorativas
+            Este div contiene dos divs anidados, cada uno con una imagen
+        -->
+        <div class="contenedorImagenes">
+            <!-- Primera imagen: velocímetro de coche -->
+            <div class="contenedorImagen">
+                <!--
+                    Imagen de millas
+                    class="velocimetro" aplica estilos CSS específicos a esta imagen
+                    Si cambias src="Millas1.jpg" a otra ruta, mostrarás una imagen diferente
+                -->
+                <img src="Millas1.jpg" class="velocimetro">
+            </div>
+
+            <!-- Segunda imagen: tablero de coche -->
+            <div class="contenedorImagen2">
+                <!--
+                    Imagen del tablero
+                    class="tablero" aplica estilos CSS específicos a esta imagen
+                    Si cambias src="tablero.jpg", mostrarás una imagen diferente
+                -->
+                <img src="tablero.jpg" class="tablero">
+            </div>
+        </div>
+
+        <!--
+            Contenedor principal con el formulario de conversión
+        -->
+        <div>
+
+            <!--
+                Encabezado que instruye al usuario a ingresar el valor
+                class="encabezados" aplica estilos CSS a este texto
+            -->
+            <h2 class="encabezados">Ingrese el valor en millas</h2>
+
+            <!--
+                Campo de entrada de texto
+                id="txtValor1" → Identificador único para acceder desde JavaScript
+                class="text" → Aplica estilos CSS al campo de entrada
+                El usuario escribe aquí el número de millas a convertir
+            -->
+            <input class="text" id="txtValor1"/>
+
+            <!--
+                Elemento donde se mostrará el resultado de la conversión
+                id="lblResultado" → Identificador único
+                class="encabezados" → Aplica estilos CSS
+                Inicialmente muestra "Resultado: " sin ningún número
+                Después de hacer clic en CONVERTIR, mostrará algo como "Resultado: 16.09 km"
+            -->
+            <h3 id="lblResultado" class="encabezados">
+                Resultado:
+            </h3>
+
+            <!--
+                Botón para realizar la conversión
+                type="button" → Define que es un botón
+                class="text" → Aplica estilos CSS
+                value="CONVERTIR A KILOMETROS" → Texto del botón
+                onclick="convertir();" → Ejecuta la función convertir() cuando se hace clic
+
+                FLUJO AL HACER CLIC:
+                1. Se ejecuta convertir()
+                2. convertir() lee el valor de txtValor1
+                3. Multiplica por 1.609
+                4. Actualiza lblResultado con el resultado en km
+            -->
+            <input class="text" type="button" value="CONVERTIR A KILOMETROS" onclick="convertir();"/>
+
+        </div>
+
+    </body>
+</html>
+
+        

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+    ====================================
+    ARCHIVO: ejercicio3.html
+    PROPÓSITO: Página HTML interactiva que pregunta si te gusta el fútbol
+    Muestra una imagen y dos botones (Si/No) para responder la pregunta
+    ====================================
+-->
+<html>
+    <head>
+        <!-- Título que aparece en la pestaña del navegador -->
+        <title>Pregunta</title>
+    </head>
+
+    <body>
+        <!-- Encabezado principal con la pregunta para el usuario -->
+        <h1>Te gusta el futbol?</h1>
+    </body>
+
+    <!--
+        Imagen de fútbol
+        Propiedades:
+        - src: ruta de la imagen (futbol.png)
+        - alt: texto alternativo descriptivo
+        - width: ancho de 200 píxeles
+        - height: alto de 400 píxeles
+
+        Nota: Si cambias width a 400, la imagen será el doble de ancha
+        Si cambias height a 200, la imagen será más pequeña verticalmente
+    -->
+    <img src="futbol.png" alt="pregunta" width="200" height="400"/>
+
+    <!--
+        Botón "Si"
+        Este botón no tiene un onclick definido, por lo que no ejecuta ninguna acción cuando se hace clic
+        Para hacerlo funcional, deberías agregar: onclick="alert('Gracias por tu respuesta: Si');"
+    -->
+    <input type="button" value="Si"/>
+
+    <!--
+        Botón "No"
+        Similar al botón "Si", tampoco tiene funcionalidad definida
+        Podrías hacer que muestre algo cuando se haga clic: onclick="alert('Gracias por tu respuesta: No');"
+    -->
+    <input type="button" value="No"/>
+
+</html>
