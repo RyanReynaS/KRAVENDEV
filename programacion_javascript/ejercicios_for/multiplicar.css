@@ -1,14 +1,25 @@
+/* ========================================
+   ESTILOS GLOBALES
+   ======================================== */
+
+/* Reset: elimina márgenes y padding por defecto */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+
+/* Animación float: hace que los elementos suban y bajen suavemente */
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
 }
 
+/* Animación slideInDown: elemento entra desde arriba hacia abajo */
 @keyframes slideInDown {
     from {
         opacity: 0;
@@ -20,6 +31,7 @@
     }
 }
 
+/* Animación slideInUp: elemento entra desde abajo hacia arriba */
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -31,11 +43,13 @@
     }
 }
 
+/* Animación pulse: hace que el elemento pulse (crece y se encoge) */
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
 
+/* Animación shimmer: efecto de brillo deslizante */
 @keyframes shimmer {
     0% {
         background-position: -1000px 0;
@@ -45,10 +59,15 @@
     }
 }
 
+/* ========================================
+   ESTILOS DEL CUERPO
+   ======================================== */
+
 html, body {
     height: 100%;
 }
 
+/* body: fondo gradiente azul marino, fuente Poppins */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f3460 0%, #1a5f7a 50%, #2d7a8a 100%);
@@ -61,7 +80,11 @@ body {
     color: #2c3e50;
 }
 
-/* Decoraciones de fondo */
+/* ========================================
+   DECORACIONES DE FONDO
+   ======================================== */
+
+/* background-decoration: contenedor de las formas flotantes de fondo */
 .background-decoration {
     position: fixed;
     top: 0;
@@ -72,12 +95,14 @@ body {
     pointer-events: none;
 }
 
+/* shape: base para las formas flotantes (círculos decorativos) */
 .shape {
     position: absolute;
     opacity: 0.1;
     border-radius: 50%;
 }
 
+/* shape-1: círculo flotante superior derecho */
 .shape-1 {
     width: 300px;
     height: 300px;
@@ -87,6 +112,7 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 
+/* shape-2: círculo flotante inferior izquierdo */
 .shape-2 {
     width: 200px;
     height: 200px;
@@ -96,6 +122,7 @@ body {
     animation: float 8s ease-in-out infinite reverse;
 }
 
+/* shape-3: círculo flotante inferior derecho */
 .shape-3 {
     width: 250px;
     height: 250px;
@@ -105,7 +132,11 @@ body {
     animation: float 7s ease-in-out infinite;
 }
 
-/* Contenedor principal */
+/* ========================================
+   CONTENEDOR PRINCIPAL
+   ======================================== */
+
+/* container: caja blanca que contiene todo el contenido */
 .container {
     flex: 1;
     background: white;
@@ -118,7 +149,11 @@ body {
     animation: slideInUp 0.8s ease-out;
 }
 
-/* Header */
+/* ========================================
+   ENCABEZADO
+   ======================================== */
+
+/* header: sección superior con título y botón */
 .header {
     display: flex;
     justify-content: space-between;
@@ -128,11 +163,13 @@ body {
     flex-wrap: wrap;
 }
 
+/* header-content: contenedor del texto del encabezado */
 .header-content {
     flex: 1;
     min-width: 250px;
 }
 
+/* title: título principal en Playfair Display (tipografía serif elegante) */
 .title {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
@@ -143,6 +180,7 @@ body {
     animation: slideInDown 0.8s ease-out;
 }
 
+/* subtitle: descripción bajo el título */
 .subtitle {
     font-size: 16px;
     color: #7f8c8d;
@@ -152,6 +190,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* instructions: caja con instrucciones destacadas (fondo amarillo claro) */
 .instructions {
     font-size: 14px;
     color: #0f3460;
@@ -168,7 +207,11 @@ body {
     font-weight: 600;
 }
 
-/* Botón Principal */
+/* ========================================
+   BOTÓN PRINCIPAL
+   ======================================== */
+
+/* btn-probar: botón para generar la tabla (gradiente rojo coral) */
 .btn-probar {
     padding: 16px 48px;
     background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
@@ -186,17 +229,23 @@ body {
     animation: slideInDown 0.9s ease-out;
 }
 
+/* btn-probar:hover: efecto cuando pasa el mouse (sube y brilla más) */
 .btn-probar:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 45px rgba(255, 107, 107, 0.4);
     background: linear-gradient(135deg, #ff5252 0%, #ff3333 100%);
 }
 
+/* btn-probar:active: efecto cuando se presiona el botón */
 .btn-probar:active {
     transform: translateY(-2px);
 }
 
-/* Caja de Texto */
+/* ========================================
+   CAJA DE TEXTO (Input)
+   ======================================== */
+
+/* input-container: contenedor de la caja de texto con fondo gris claro */
 .input-container {
     margin-bottom: 40px;
     padding: 25px;
@@ -206,6 +255,7 @@ body {
     animation: slideInUp 1s ease-out;
 }
 
+/* input-label: etiqueta de la caja de texto */
 .input-label {
     display: block;
     font-family: 'Poppins', sans-serif;
@@ -217,6 +267,7 @@ body {
     margin-bottom: 12px;
 }
 
+/* input-numero: caja de entrada para escribir el número (1-10) */
 .input-numero {
     width: 100%;
     padding: 14px 18px;
@@ -230,6 +281,7 @@ body {
     box-shadow: 0 4px 12px rgba(15, 52, 96, 0.1);
 }
 
+/* input-numero:focus: efecto cuando el usuario hace clic en el input (borde coral) */
 .input-numero:focus {
     outline: none;
     border-color: #ff6b6b;
@@ -237,10 +289,12 @@ body {
     transform: translateY(-2px);
 }
 
+/* input-numero::placeholder: texto de ejemplo dentro del input */
 .input-numero::placeholder {
     color: #a0aec0;
 }
 
+/* input-help: texto pequeño debajo del input con instrucciones */
 .input-help {
     font-size: 12px;
     color: #5a6c7d;
@@ -249,7 +303,11 @@ body {
     letter-spacing: 0.3px;
 }
 
-/* Estadísticas */
+/* ========================================
+   ESTADÍSTICAS (Tarjetas de información)
+   ======================================== */
+
+/* stats: grid con 3 tarjetas de estadísticas */
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -258,6 +316,7 @@ body {
     animation: slideInUp 1.1s ease-out;
 }
 
+/* stat-item: tarjeta individual con información (gradiente gris) */
 .stat-item {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 25px;
@@ -267,12 +326,14 @@ body {
     border: 2px solid transparent;
 }
 
+/* stat-item:hover: efecto cuando pasa el mouse (sube y brilla) */
 .stat-item:hover {
     transform: translateY(-8px);
     border-color: #ff6b6b;
     box-shadow: 0 15px 40px rgba(255, 107, 107, 0.2);
 }
 
+/* stat-number: número grande en la tarjeta (ej: 10, 3, 30) */
 .stat-number {
     display: block;
     font-family: 'Playfair Display', serif;
@@ -282,6 +343,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* stat-label: etiqueta debajo del número (ej: "Operaciones") */
 .stat-label {
     display: block;
     font-size: 14px;
@@ -291,7 +353,11 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Tabla */
+/* ========================================
+   TABLA DE MULTIPLICACIÓN
+   ======================================== */
+
+/* tabla-multiplicar: tabla principal (se genera dinámicamente con JavaScript) */
 .tabla-multiplicar {
     width: 100%;
     border-collapse: separate;
@@ -302,11 +368,13 @@ body {
     animation: slideInUp 1.2s ease-out;
 }
 
+/* tabla-multiplicar thead: encabezado de la tabla (fondo azul marino) */
 .tabla-multiplicar thead {
     background: linear-gradient(135deg, #0f3460 0%, #1a5f7a 100%);
     color: white;
 }
 
+/* tabla-multiplicar th: celdas del encabezado (Operación, Resultado) */
 .tabla-multiplicar th {
     padding: 22px 25px;
     text-align: left;
@@ -316,32 +384,38 @@ body {
     letter-spacing: 1px;
 }
 
+/* tabla-multiplicar td: celdas de datos en la tabla */
 .tabla-multiplicar td {
     padding: 18px 25px;
     border-bottom: 1px solid #ecf0f1;
     font-size: 15px;
 }
 
+/* tabla-multiplicar tbody tr: filas de la tabla (cuerpo) */
 .tabla-multiplicar tbody tr {
     transition: all 0.3s ease;
     background: white;
 }
 
+/* tabla-multiplicar tbody tr:nth-child(odd): alterna colores (filas pares con fondo gris) */
 .tabla-multiplicar tbody tr:nth-child(odd) {
     background-color: #f8f9fb;
 }
 
+/* tabla-multiplicar tbody tr:hover: efecto cuando pasa el mouse sobre una fila */
 .tabla-multiplicar tbody tr:hover {
     background-color: #fff8e6;
     transform: scale(1.01);
     box-shadow: 0 5px 20px rgba(255, 107, 107, 0.15);
 }
 
+/* operacion: celda con la operación (ej: "3 × 5") - texto azul marino */
 .operacion {
     font-weight: 600;
     color: #0f3460;
 }
 
+/* resultado: celda con el resultado - texto coral grande y elegante */
 .resultado {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
@@ -349,7 +423,11 @@ body {
     color: #ff6b6b;
 }
 
-/* Footer */
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
+/* footer: sección de créditos al final de la página */
 .footer {
     text-align: center;
     padding: 30px 20px;
@@ -359,17 +437,23 @@ body {
     animation: slideInUp 1.4s ease-out;
 }
 
+/* footer p: párrafo del footer */
 .footer p {
     font-weight: 300;
     letter-spacing: 0.5px;
 }
 
+/* footer strong: nombre del autor (en rojo coral) */
 .footer strong {
     font-weight: 600;
     color: #ff6b6b;
 }
 
-/* Responsive Design */
+/* ========================================
+   DISEÑO RESPONSIVO (Adaptable a pantallas pequeñas)
+   ======================================== */
+
+/* Dispositivos medianos (tablets - máximo 768px) */
 @media (max-width: 768px) {
     .container {
         padding: 35px;
@@ -413,6 +497,7 @@ body {
     }
 }
 
+/* Dispositivos pequeños (celulares - máximo 480px) */
 @media (max-width: 480px) {
     body {
         padding: 15px;
@@ -437,11 +522,13 @@ body {
         margin-bottom: 25px;
     }
 
+    /* Botón más pequeño en celulares */
     .btn-probar {
         padding: 14px 32px;
         font-size: 14px;
     }
 
+    /* Estadísticas en una sola columna */
     .stats {
         grid-template-columns: 1fr;
         gap: 12px;
@@ -461,6 +548,7 @@ body {
         font-size: 11px;
     }
 
+    /* Tabla con texto más pequeño */
     .tabla-multiplicar th,
     .tabla-multiplicar td {
         padding: 12px 10px;

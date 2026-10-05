@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Tabla de Multiplicar - Página interactiva para aprender tablas de multiplicación -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla del 3 - Multiplicaciones</title>
+
+    <!-- Google Fonts - Importa tipografías externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="multiplicar.css">
+
+    <!-- Script de JavaScript para funcionalidad -->
+    <script src="multiplicar.js"></script>
+</head>
+<body>
+    <!-- Decoraciones de fondo (formas animadas) -->
+    <div class="background-decoration">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <main class="container">
+        <!-- Encabezado con título e instrucciones -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Tabla de Multiplicar</h1>
+                <p class="subtitle">Selecciona un número y aprende sus tablas de forma interactiva</p>
+                <p class="instructions">💡 Elige cualquier número entre 1 y 10, presiona "Generar" y descubre su tabla</p>
+            </div>
+            <!-- Botón que ejecuta la función generarTablas() -->
+            <button class="btn-probar" onclick="generarTablas()">📊 GENERAR TABLA</button>
+        </header>
+
+        <!-- Sección de contenido principal -->
+        <section class="content">
+            <!-- Caja de texto para seleccionar número (1-10) -->
+            <div class="input-container">
+                <label for="numero-tabla" class="input-label">🔢 Selecciona tu número:</label>
+                <input
+                    type="number"
+                    id="numero-tabla"
+                    class="input-numero"
+                    min="1"
+                    max="10"
+                    value="3"
+                    placeholder="Escribe un número del 1 al 10"
+                >
+                <p class="input-help">Rango válido: 1 a 10 • Valor por defecto: 3</p>
+            </div>
+
+            <!-- Estadísticas (información sobre la tabla) -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Operaciones</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Base</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Máximo</span>
+                </div>
+            </div>
+
+            <!-- Tabla que mostrará las multiplicaciones -->
+            <table class="tabla-multiplicar">
+                <thead>
+                    <tr>
+                        <th>Operación</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <!-- tbody#tabla-body: contenedor donde JavaScript agrega dinámicamente las filas de la tabla -->
+                <tbody id="tabla-body">
+                    <!-- Datos iniciales (se reemplazan cuando el usuario presiona "Generar Tabla") -->
+                    <tr>
+                        <td><span class="operacion">3 × 1</span></td>
+                        <td><span class="resultado">3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 2</span></td>
+                        <td><span class="resultado">6</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 3</span></td>
+                        <td><span class="resultado">9</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 4</span></td>
+                        <td><span class="resultado">12</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 5</span></td>
+                        <td><span class="resultado">15</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 6</span></td>
+                        <td><span class="resultado">18</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 7</span></td>
+                        <td><span class="resultado">21</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 8</span></td>
+                        <td><span class="resultado">24</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 9</span></td>
+                        <td><span class="resultado">27</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 10</span></td>
+                        <td><span class="resultado">30</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Pie de página con créditos del autor -->
+    <footer class="footer">
+        <p>Creado por: <strong>Ryan</strong></p>
+    </footer>
+
+    <!-- Script de JavaScript para la funcionalidad interactiva -->
+    <script src="multiplicar.js"></script>
+</body>
+</html>
