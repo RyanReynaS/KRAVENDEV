@@ -149,6 +149,18 @@ body {
     font-weight: 300;
     line-height: 1.6;
     animation: slideInDown 1s ease-out;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    font-size: 14px;
+    color: #0f3460;
+    font-weight: 500;
+    background: linear-gradient(135deg, #fff8e6 0%, #ffe6cc 100%);
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+    animation: slideInDown 1.2s ease-out;
 }
 
 .highlight {
@@ -227,6 +239,14 @@ body {
 
 .input-numero::placeholder {
     color: #a0aec0;
+}
+
+.input-help {
+    font-size: 12px;
+    color: #5a6c7d;
+    margin-top: 8px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
 }
 
 /* Estadísticas */
