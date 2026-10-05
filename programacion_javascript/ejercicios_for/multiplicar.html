@@ -3,65 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla del 3</title>
+    <title>Tabla del 3 - Multiplicaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="multiplicar.css">
 </head>
 <body>
-    <div class="container">
-        <button class="btn-probar">PROBAR</button>
-
-        <h1>Tabla de Multiplicar del 3</h1>
-
-        <table class="tabla-multiplicar">
-            <thead>
-                <tr>
-                    <th>Operación</th>
-                    <th>Resultado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>3 × 1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>3 × 2</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>3 × 3</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>3 × 4</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>3 × 5</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>3 × 6</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>3 × 7</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>3 × 8</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>3 × 9</td>
-                    <td>27</td>
-                </tr>
-                <tr>
-                    <td>3 × 10</td>
-                    <td>30</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="background-decoration">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
     </div>
+
+    <main class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Tabla de Multiplicar</h1>
+                <p class="subtitle">Aprende la tabla del <span class="highlight">3</span> de forma interactiva</p>
+            </div>
+            <button class="btn-probar">PROBAR</button>
+        </header>
+
+        <section class="content">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Operaciones</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Base</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Máximo</span>
+                </div>
+            </div>
+
+            <table class="tabla-multiplicar">
+                <thead>
+                    <tr>
+                        <th>Operación</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="operacion">3 × 1</span></td>
+                        <td><span class="resultado">3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 2</span></td>
+                        <td><span class="resultado">6</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 3</span></td>
+                        <td><span class="resultado">9</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 4</span></td>
+                        <td><span class="resultado">12</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 5</span></td>
+                        <td><span class="resultado">15</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 6</span></td>
+                        <td><span class="resultado">18</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 7</span></td>
+                        <td><span class="resultado">21</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 8</span></td>
+                        <td><span class="resultado">24</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 9</span></td>
+                        <td><span class="resultado">27</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="operacion">3 × 10</span></td>
+                        <td><span class="resultado">30</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Creado por: <strong>Ryan</strong></p>
+    </footer>
 </body>
 </html>
